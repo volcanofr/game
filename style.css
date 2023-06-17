@@ -1,0 +1,119 @@
+*{
+   border: 0;
+   box-sizing: border-box;
+   margin: 0;
+   color: black;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ body{
+   background-color: #f6f4f2;
+ }
+ 
+ header{
+   width: 100%;
+   height: 88px;
+   background: #252423;
+ }
+ 
+ .boxTitle{
+   width: 30%;
+   height: 100%;
+ }
+ 
+ .Title{
+   position: absolute;
+   font-size: 40px;
+   margin-top: 22px;
+   margin-left: 20px;
+   color: white;
+ }
+
+ .sub-title{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   text-align: center;
+   font-size: 50px;
+ }
+
+ main{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ 
+ .category {
+   width: 400px;
+   height: 350px;
+   margin: 10px;
+   border-radius: 20px;
+   background-color: white;
+   border: solid 2px #1A1D4E;
+   transition: transform 0.3s ease-in-out;
+}
+
+.category:hover{
+   transform: scale(1.05);
+}
+
+.img-category{
+   width: 300px;
+   height: 300px;
+   display: block;
+   margin: 0 auto;
+}
+
+.text-category{
+   padding-top: 30px;
+   text-align: center;
+}
+
+
+a{
+   text-decoration: none;
+}
+
+.main{
+   padding-top: 30px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+ul{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+
+.game{
+   background-color: #252423;
+   background-size: cover;
+   width: 384px;
+   height: 216px;
+   margin: 10px;
+   border-radius: 20px;
+   transition: transform 0.3s ease-in-out;
+}
+
+.game:hover{
+   transform: scale(1.03);
+}
+
+.text-game{
+   color: white;
+   text-shadow: 2px 2px black;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+.number-game{
+   text-align: center;
+   padding-top: 40px;
+}

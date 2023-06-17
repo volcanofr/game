@@ -1,0 +1,68 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="searchbar.css">
+	<title>Hungry Pirate</title>
+</head>
+<body>
+
+	<header>
+      <div class="BoxTitle">
+        <a href="index.html"><h1 class="Title">Hungry<span style="color: #0688fa;">Pirate</span></h1></a>
+      </div>
+      <form action="" class="search-bar">
+        <input id="in" type="text" autocomplete="off" pattern=".*\S.*" required>
+        <button class="search-btn">
+          <span>Search</span>
+        </button>
+      </form>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("form #in").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myList a").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+      var count = $("#myList a:visible").length;
+      $("#count").text(count);
+    });
+    var count = $("#myList a").length;
+      $("#count").text(count);
+  });
+  </script>
+
+  <h1 class="number-game">Nombre de jeux : <span id="count"></span></h1>
+
+  <main class="main">
+    <ul id="myList">
+      <a href="https://upfiles.com/MEzaf" target="_blank"><div class="game" style="background-image: url(https://th.bing.com/th/id/R.b93291c78815cd6348dfbf0ddc272cf8?rik=dYN57OX%2bMvJm%2fw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f7%2f8%2f8%2f13225.jpg&ehk=yBcU2DhwVedEjgNNxFEFF651cOz33eDhJfj2Kf2xn1E%3d&risl=&pid=ImgRaw&r=0);"><h1 class="text-game">Grand Theft Auto V</h1></div></a>
+      <a href="https://upfiles.com/dGLsnsDV" target="_blank"><div class="game" style="background-image: url(https://th.bing.com/th/id/R.258906f31eae32bc34a2e9d41b8a0165?rik=B%2fFgPq8h4OL5AQ&pid=ImgRaw&r=0);"><h1 class="text-game">Grand Theft Auto IV</h1></div></a>
+      <a href="https://upfiles.com/Q2z0" target="_blank"><div class="game" style="background-image: url(https://cdn.wallpapersafari.com/88/49/aIhU0J.jpg);"><h1 class="text-game">The Last of Us 1</h1></div></a>
+      <a href="https://upfiles.com/69noAoUZ" target="_blank"><div class="game" style="background-image: url(https://th.bing.com/th/id/R.4870ab199cc919b7fc0a30e9e328a037?rik=9n8%2bKYu8U%2b1JKw&pid=ImgRaw&r=0);"><h1 class="text-game">Elden Ring</h1></div></a>
+      <a href="https://upfiles.com/js9siDP" target="_blank"><div class="game" style="background-image: url(https://th.bing.com/th/id/R.4fcc899f58b08b1c6e2767f85b72a506?rik=fh%2fR310QEoPv%2fQ&pid=ImgRaw&r=0);"><h1 class="text-game">Red Dead Redemption 2</h1></div></a>
+      <a href="https://upfiles.com/JXvQ" target="_blank"><div class="game" style="background-image: url(https://www.kolpaper.com/wp-content/uploads/2021/07/Death-Stranding-Wallpapers-6.jpg);"><h1 class="text-game">Death Stranding</h1></div></a>
+      <a href="https://upfiles.com/ScbOa" target="_blank"><div class="game" style="background-image: url(https://th.bing.com/th/id/R.08d2db20f14b88f1f8cce30c05f161d2?rik=QFBwXEfo1SXiUg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2f0%2f4%2f336472.jpg&ehk=ZhxhUceWr8YlohwLMOjx6jxk4yYzO%2bG9Ova9Wn3YOFo%3d&risl=&pid=ImgRaw&r=0);"><h1 class="text-game">God of War</h1></div></a>
+      <a href="https://upfiles.com/ckFrY0F" target="_blank"><div class="game" style="background-image: url(https://s1.gaming-cdn.com/images/products/9567/orig/forza-horizon-5-premium-edition-pc-xbox-one-xbox-series-xs-premium-edition-pc-xbox-one-xbox-serie-x-s-game-microsoft-store-cover.jpg);"><h1 class="text-game">Forza Horizon 5 <br> Premium Edition</h1></div></a>
+      <a href="https://upfiles.com/HqoHe1" target="_blank"><div class="game" style="background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/2381590/header.jpg?t=1686610226);"><h1 class="text-game">Only Up!</h1></div></a>
+      <a href="https://upfiles.com/BROFG" target="_blank"><div class="game" style="background-image: url(https://th.bing.com/th/id/R.bc23f306cefff13e4331fcbbb3931c86?rik=hdeQuGu3tp%2bJDA&pid=ImgRaw&r=0);"><h1 class="text-game">Little Nightmares II</h1></div></a>
+      <a href="https://upfiles.com/ydXJjy" target="_blank"><div class="game" style="background-image: url(https://wallpapercave.com/wp/wp2303864.jpg);"><h1 class="text-game">Little Nightmares</h1></div></a>
+      <a href="https://upfiles.com/iegoeG0u" target="_blank"><div class="game" style="background-image: url(https://th.bing.com/th/id/R.43b81ed196e1285dcd1c557f57f0b466?rik=OGfXXLLOf8%2bN4Q&pid=ImgRaw&r=0);"><h1 class="text-game">Spider-Man Miles Morales</h1></div></a>
+      <a href="https://upfiles.com/AkPjqNd" target="_blank"><div class="game" style="background-image: url(https://i0.wp.com/thekoalition.com/images/2020/11/x1080.jpg?fit=1920%2C1080&ssl=1);"><h1 class="text-game">Spider-Man Remastered</h1></div></a>
+      <a href="https://upfiles.com/TZK8R" target="_blank"><div class="game" style="background-image: url(https://th.bing.com/th/id/OIP.uLjFZmF3hrRsoJgPocCCyQHaEK?pid=ImgDet&rs=1);"><h1 class="text-game">Hogwarts Legacy</h1></div></a>
+    </ul>
+  </main>
+
+  <script>
+    $(document).ready(function(){
+      var count = $("#myList a").length;
+      $("#count").text(count);
+    });
+  </script>
+
+</body>
+</html>
