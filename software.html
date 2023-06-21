@@ -1,0 +1,67 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="searchbar.css">
+	<title>Hungry Pirate</title>
+
+   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q481T6CS5Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q481T6CS5Q');
+  </script>
+</head>
+<body>
+
+	<header>
+      <div class="BoxTitle">
+        <a href="index.html"><h1 class="Title">Hungry<span style="color: #0688fa;">Pirate</span></h1></a>
+      </div>
+      <form action="" class="search-bar">
+        <input id="in" type="text" autocomplete="off" pattern=".*\S.*" required>
+        <button class="search-btn">
+          <span>Search</span>
+        </button>
+      </form>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("form #in").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myList a").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+      var count = $("#myList a:visible").length;
+      $("#count").text(count);
+    });
+    var count = $("#myList a").length;
+      $("#count").text(count);
+  });
+  </script>
+
+  <h1 class="number-game">Number of Softwares : <span id="count"></span></h1>
+
+  <main class="main">
+    <ul id="myList">
+      <!-- <a href="link" target="_blank"><div class="game" style="background-image: url();"><h1 class="text-game">Text</h1></div></a> -->
+      <a href="https://upfiles.com/vYhamI" target="_blank"><div class="game" style="background-image: url(https://addiscohitz.files.wordpress.com/2021/07/photoshop.png?w=737);"><h1 class="text-game">Adobe Photoshop <br> 2021</h1></div></a>
+      <a href="https://upfiles.com/gwkOT2" target="_blank"><div class="game" style="background-image: url(https://th.bing.com/th/id/R.5b153965851588697484f52861862fd3?rik=fDYYdq1SY93RgA&pid=ImgRaw&r=0);"><h1 class="text-game">Adobe After Effects <br> 2020</h1></div></a>
+    </ul>
+  </main>
+
+  <script>
+    $(document).ready(function(){
+      var count = $("#myList a").length;
+      $("#count").text(count);
+    });
+  </script>
+
+</body>
+</html>
